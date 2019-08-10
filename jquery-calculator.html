@@ -79,9 +79,11 @@ $(document).ready(function() {
   let secondNumber = 0;
 
   $(".number").click(function(){
-    let firstNumber = $("<h1>");
-      firstNumber.text($(this).attr("value")); 
-      $("#first-number").append(firstNumber);
+      let firstNumber = $("#first-number");
+      // firstNumber.text($(this).attr("value")); 
+      // console.log($(this).attr("value"));
+      $("#first-number").append($(this).attr("value"));
+      // $("#first-number").text();
 });
         
 
