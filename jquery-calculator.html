@@ -78,16 +78,25 @@ $(document).ready(function() {
 
   let secondNumber = 0;
 
+  let operatorClicked = false;
+
   $(".number").click(function(){
+    if(!operatorClicked) {
     let firstNumber = $("#first-number");
     firstNumber.append($(this).attr("value"));
     let total = $('#first-number').text();
     console.log(total);
-
+    } else {
+    let secondNumber = $("#second-number");
+    secondNumber.append($(this).attr("value"));
+    let total = $('#second-number').text();
+    console.log(total);
+    }
 });
   $(".operator").click(function() {
     let operator = $('#operator');
     operator.html($(this).text());
+    operatorClicked = true;
     
   });  
 
