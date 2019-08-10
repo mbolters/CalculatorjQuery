@@ -79,24 +79,17 @@ $(document).ready(function() {
   let secondNumber = 0;
 
   $(".number").click(function(){
-    // let totalValue = 0;
-    // let firstNumber = $("#first-number");
-    // totalValue += $(this).attr("value");
-    // firstNumber.text($(this).attr("value")); 
-    
     let firstNumber = $("#first-number");
     firstNumber.append($(this).attr("value"));
     let total = $('#first-number').text();
-    console.log(firstNumber);
+    console.log(total);
 
-    
-    
-    
-
-    
-    
 });
-        
+  $(".operator").click(function() {
+    let operator = $('#operator');
+    operator.html($(this).text());
+    
+  });  
 
 
 });
