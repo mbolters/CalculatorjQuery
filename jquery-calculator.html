@@ -64,6 +64,7 @@
             <h1 id="second-number"></h1>
             <hr>
             <h1 id="result"></h1>
+
           </div>
         </div>
       </div>
@@ -74,7 +75,15 @@
 
 $(document).ready(function() {
 
-// Your code here...
+
+  let secondNumber = 0;
+
+  $(".number").click(function(){
+    let firstNumber = $("#first-number");
+      firstNumber.text($(this).attr("value")); 
+      $("#first-number").append(firstNumber);
+});
+        
 
 
 });
