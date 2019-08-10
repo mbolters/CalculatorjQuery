@@ -79,7 +79,7 @@ $(document).ready(function() {
   let secondNumber = 0;
 
   $(".number").click(function(){
-    let firstNumber = $("#first-number");
+    let firstNumber = $("<h1>");
       firstNumber.text($(this).attr("value")); 
       $("#first-number").append(firstNumber);
 });
