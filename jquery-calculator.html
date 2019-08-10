@@ -100,7 +100,32 @@ $(document).ready(function() {
     
   });  
 
+  $('.equal').click(function() {
+    
+  });
 
+});
+
+$('.equal').click(function() {
+   let firstInput;
+   let secondInput;
+   if (equals.hasClass('add')) {
+       firstInput = parseFloat(input.attr('name'));
+       secondInput = parseFloat(input.val());
+       input.val(firstInput + secondInput);
+   } else if (equals.hasClass('subtract')) {
+       firstInput = parseFloat(input.attr('name'));
+       secondInput = parseFloat(input.val());
+       input.val(firstInput - secondInput);
+   } else if (equals.hasClass('multiply')) {
+       firstInput = parseFloat(input.attr('name'));
+       secondInput = parseFloat(input.val());
+       input.val(firstInput * secondInput);
+   } else if (equals.hasClass('divide')) {
+       firstInput = parseFloat(input.attr('name'));
+       secondInput = parseFloat(input.val());
+       input.val(firstInput / secondInput);
+   }
 });
 
 </script>
